@@ -24,7 +24,7 @@ router.post(
         await sendMail({
           email: req.seller.email,
           subject: "Withdraw Request",
-          message: `Hello ${req.seller.name}, Your withdraw request of ${amount}$ is processing. It will take 3days to 7days to processing! `,
+          message: `Hello ${req.seller.name}, Your withdraw request of ${amount}₹ is processing. It will take 3days to 7days to processing! `,
         });
         res.status(201).json({
           success: true,
